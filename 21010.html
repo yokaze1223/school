@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>ex-3-2</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            text-align: center;
+        }
+
+        img.pokemon {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display-1"></div>
+    <hr>
+    <div id="display-2"></div>
+    <hr>
+    <div id="display-3"></div>
+    <hr>
+
+    <script>
+        var pokemon1 = "pikachu.png";
+        var pokemon2 = "bulbasaur.png";
+        var pokemon3 = "charmander.png";
+        var pokemon4 = "squirtle.png";
+
+        var fragment1 = "<img class='pokemon' src ='" + pokemon1 + "' />";
+        for (i=0;i<3;i++)
+        {
+            fragment1 += "<img class='pokemon' src ='" + pokemon1 + "' />";
+        }
+        document.getElementById("display-1").innerHTML = fragment1;
+
+        var fragment2 = "<img class='pokemon' src ='" + pokemon1 + "' />";
+        for (i=0;i<3;i++)
+        {
+            fragment2 += "<img class='pokemon' src ='" + pokemon1 + "' />";
+        }
+        fragment2 +="<br>"
+
+        fragment2 += "<img class='pokemon' src ='" + pokemon2 + "' />";
+        for (i=0;i<3;i++)
+        {
+            fragment2 += "<img class='pokemon' src ='" + pokemon2 + "' />";
+        }
+        fragment2 +="<br>"
+
+        fragment2 += "<img class='pokemon' src ='" + pokemon3 + "' />";
+        for (i=0;i<3;i++)
+        {
+            fragment2 += "<img class='pokemon' src ='" + pokemon3 + "' />";
+        }
+        fragment2 +="<br>"
+
+        fragment2 += "<img class='pokemon' src ='" + pokemon4 + "' />";
+        for (i=0;i<3;i++)
+        {
+            fragment2 += "<img class='pokemon' src ='" + pokemon4 + "' />";
+        }
+        fragment2 +="<br>"
+        document.getElementById("display-2").innerHTML = fragment2;
+        var fragment3 ="";
+        for (i=0;i<4;i++)
+        {
+            fragment3 += "<img class='pokemon' src ='" + pokemon1 + "' />";
+        }
+        fragment3 +="<br>"
+        for (i=0;i<4;i++)
+        {
+            fragment3 += "<img class='pokemon' src ='" + pokemon2 + "' />";
+        }
+        fragment3 +="<br>"
+        for (i=0;i<4;i++)
+        {
+            fragment3 += "<img class='pokemon' src ='" + pokemon3 + "' />";
+        }
+        fragment3 +="<br>"
+
+        for (i=0;i<4;i++)
+        {
+            fragment3 += "<img class='pokemon' src ='" + pokemon4+ "' />";
+        }
+        fragment3 +="<br>"
+        document.getElementById("display-3").innerHTML = fragment3;
+    </script>
+</body>
+
+</html>
